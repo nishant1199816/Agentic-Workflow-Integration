@@ -1,10 +1,8 @@
-# 🤖 Enterprise Customer Onboarding — AI Agentic Pipeline
-
 **UnifyApps FDSE Assignment** | Enterprise Data & Agentic Workflow Integration
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 An enterprise client needs to automate customer onboarding. They have:
 - **Unstructured data** sitting in an **AWS S3 bucket** (plain text, messy JSON)
@@ -14,7 +12,7 @@ An enterprise client needs to automate customer onboarding. They have:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────┐      ┌───────────────────┐      ┌────────────┐      ┌──────────────────┐
@@ -31,7 +29,7 @@ An enterprise client needs to automate customer onboarding. They have:
                                                                        (log + alert)
 ```
 
-## 📊 Data Flow
+##  Data Flow
 
 ```
 S3 Object (raw text)
@@ -54,7 +52,7 @@ CRM Updated ✓
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 | Component | Technology | Why |
 |-----------|-----------|-----|
@@ -68,7 +66,7 @@ CRM Updated ✓
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone & Install
 
@@ -106,16 +104,16 @@ python main.py --provider gemini --real-s3 --real-crm
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 unifyapps-fdse/
 ├── main.py                    # Entry point, CLI args
 ├── agents/
-│   ├── orchestrator.py        # 🧠 Agent brain — coordinates tools
-│   ├── s3_ingestor.py         # 🪣 Tool 1: Read from S3
-│   ├── llm_parser.py          # 🤖 Tool 2: Extract structured data with LLM
-│   └── crm_updater.py         # 📤 Tool 3: Update CRM with retry logic
+│   ├── orchestrator.py        #  Agent brain — coordinates tools
+│   ├── s3_ingestor.py         #  Tool 1: Read from S3
+│   ├── llm_parser.py          #  Tool 2: Extract structured data with LLM
+│   └── crm_updater.py         #  Tool 3: Update CRM with retry logic
 ├── utils/
 │   ├── logger.py              # Structured logging
 │   └── retry.py               # Exponential backoff decorator
@@ -129,7 +127,7 @@ unifyapps-fdse/
 
 ---
 
-## 🛡️ Error Handling Strategy
+##  Error Handling Strategy
 
 ### Rate Limiting (HTTP 429)
 ```python
@@ -152,7 +150,7 @@ Each file is processed independently. One failure does not stop other files.
 
 ---
 
-## 🧪 Testing Retry Logic
+##  Testing Retry Logic
 
 ```bash
 # Simulate 40% CRM failure rate to test retry behavior
@@ -161,7 +159,7 @@ MOCK_FAIL_RATE=0.4 python main.py
 
 ---
 
-## 💡 Key Design Decisions
+##  Key Design Decisions
 
 1. **Agentic approach**: Instead of a hardcoded script, an orchestrator agent decides which tools to call — making it easy to add new tools (e.g., email notifications, Slack alerts)
 
