@@ -169,6 +169,6 @@ MOCK_FAIL_RATE=0.4 python main.py
 
 4. **LLM-agnostic parser**: Swap between Gemini, HuggingFace, or regex fallback with a single config flag
 
----
 
-*Built for UnifyApps FDSE Assignment — Nishant*
+
+
