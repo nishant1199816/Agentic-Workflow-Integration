@@ -1,4 +1,4 @@
-**UnifyApps FDSE Assignment** | Enterprise Data & Agentic Workflow Integration
+** Assignment** | Enterprise Data & Agentic Workflow Integration
 
 ---
 
