@@ -167,13 +167,6 @@ MOCK_FAIL_RATE=0.4 python main.py
 
 3. **Retry as a decorator**: `@retry_with_backoff` can be applied to any function, keeping business logic clean
 
----
-
-## 🧠 Planning & Concept Notes
-
-### Handwritten Workflow Notes
-![Notes](screenshots/notes_1.jpeg)
-![Notes](screenshots/notes_2.jpeg)
 
 
 
