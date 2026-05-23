@@ -167,8 +167,16 @@ MOCK_FAIL_RATE=0.4 python main.py
 
 3. **Retry as a decorator**: `@retry_with_backoff` can be applied to any function, keeping business logic clean
 
+4. **LLM-agnostic parser**: Swap between Gemini, HuggingFace, or regex fallback with a single config flag
 
+---
 
+## 🧠 Planning & Concept Notes
+
+### Handwritten Workflow Notes
+![Notes](screenshots/notes_1.png)
+
+![Notes](screenshots/notes_2.png)
 
 
 
