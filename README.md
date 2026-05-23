@@ -174,10 +174,9 @@ MOCK_FAIL_RATE=0.4 python main.py
 ## 🧠 Planning & Concept Notes
 
 ### Handwritten Workflow Notes
-![Notes](screenshots/notes_1.jpeg)
+![Notes](screenshots/note_1.jpeg)
 
-![Notes](screenshots/notes_2.jpeg)
-
+![Notes](screenshots/note_2.jpeg)
 
 
 
